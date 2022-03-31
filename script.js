@@ -19,7 +19,7 @@ function parseISOString(s) {
 async function updateInfo() {
     document.querySelector('.error').style.display = 'none'
     document.querySelector('.no').style.display = 'none'
-    const data = await getData('https://cors-anywhere.herokuapp.com/https://war-api.ukrzen.in.ua/alerts/api/alerts/active.json').catch(e => {
+    const data = await getData('https://cross-origin-boyan.herokuapp.com/https://war-api.ukrzen.in.ua/alerts/api/alerts/active.json').catch(e => {
         document.querySelector('.error').style.display = 'block'
     })
     if(data.alerts.length) {
